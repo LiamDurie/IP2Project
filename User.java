@@ -1,6 +1,4 @@
 public class User {
-
-    
     public int id;
     public String name;
     public String email;
@@ -11,6 +9,4 @@ public class User {
     public String password;
     public int role;
     public String userRole;
-
-
 }
