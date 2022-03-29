@@ -4,8 +4,6 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 34px;
-    background-size: cover;
-    background: rgba(236,230,219, 0.5) url(./background.jpg);
 }
 
 .container {
@@ -14,10 +12,10 @@ body {
     height: 811px;
     max-height: 811px;
     margin: 1rem;
-    padding: 1rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    background: #ece6db;
+    background: rgba(236, 230, 219, 255) url(./background.png) no-repeat center center;
+    background-size: 1700px 1300px;
     text-align: center;
 }
 
@@ -26,6 +24,7 @@ body {
 .form_input,
 .form_button {
     font: 20px 'Quicksand', Calibri;
+    font-weight: bold;
 }
 .form-hidden {
     display: none;
@@ -105,8 +104,6 @@ label{
 }
 
 .form_input-error-message {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
     color: #cc3333;
 }
 
@@ -118,7 +115,7 @@ label{
     font-size: 34px;
     color: #ECE6DB;
     border: none;
-    border-radius: 12px;
+    border-radius: 20px;
     outline: none;
     cursor: pointer;
     background: #03989e;
@@ -141,9 +138,10 @@ label{
     color: #ECE6DB;
     border: solid black 1px;
     border-radius: 30px;
-    outline: none;
+    outline: none ;
     cursor: pointer;
     background: #a7b0a7;
+    -webkit-text-stroke: 1px black;
 }
 
 .form_back:hover {
