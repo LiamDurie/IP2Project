@@ -1,3 +1,4 @@
+
 body {
     margin: 10px;
     display: flex;
@@ -6,6 +7,9 @@ body {
     font-size: 34px;
 }
 
+/* ----------Container Style-------------*/
+/* Important for successfully decreasing size of page to the same as a phone app*/
+/* Width and Height are same pixels as the prototype */
 .container {
     width: 375px;
     max-width: 375px;
@@ -14,11 +18,12 @@ body {
     margin: 3rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    background: rgba(236, 230, 219, 255) url(./background.png) no-repeat center center;
-    background-size: 1700px 1300px;
+    background: rgba(236, 230, 219, 255) url(./background.png) no-repeat center center; /* Color Declared and an already Transparent Image put as overlay */
+    background-size: 1700px 1300px; /* stretching background image to fit screen correctly */
     text-align: center;
 }
 
+/* Paragraph Styles */
 p {
     font-size: 16px;
     font-weight: normal;
@@ -26,6 +31,7 @@ p {
     margin-left: 60px;
 }
 
+/* Font Styles for majority of text */
 .container,
 .form_input,
 .form_button {
@@ -44,6 +50,7 @@ p {
     margin-bottom: 0;
 }
 
+/* Title Styles */
 .form_title {
     margin: 2rem 2rem 0 0;
     padding-top:100px;
@@ -51,6 +58,7 @@ p {
     width: 100%;
 }
 
+/* Success/Error Message Styles (YET TO BE USED) */
 .form_message {
     text-align: center;
     margin-bottom: 1rem;
@@ -64,11 +72,13 @@ p {
     color: #cc3333;
 }
 
+/* Input Styles */
 .form_input-group {
     margin-bottom: 1rem;
-    display: flex;
+    display: flex; /* Extremely Important for keeping the labels and text-fields inline*/
 }
 
+/* Label Styles */
 label{
     margin-right:10px;
     margin-left:20px;
@@ -76,6 +86,7 @@ label{
     text-align: left;
 }
 
+/* Text-Fields Styles */
 .form_input {
     object-fit: fill;
     text-align: left;
@@ -88,6 +99,7 @@ label{
     margin-right: 20px;
 }
 
+/* Drop Down Select Box Styles */
 .form_select {
     width:100%;
     text-align: left;
@@ -114,6 +126,7 @@ label{
     color: #cc3333;
 }
 
+/* Main Button Styles */
 .form_button {
     width: 236px;
     margin:10px;
@@ -128,6 +141,7 @@ label{
     background: #03989e;
 }
 
+/* Button Interactivity */
 .form_button:hover {
     background: #028085;
 }
@@ -136,6 +150,7 @@ label{
     transform: scale(0.98);
 }
 
+/* Back Button Styles */
 .form_back {
     height: 65px;
     width: 146px;
@@ -153,6 +168,7 @@ label{
     text-align: center;
 }
 
+/* Specific Enter Button In Forgotten Password Styles */
 #forgotpasswordEnter{
     width: 146px;
     height: 65px;
@@ -160,6 +176,7 @@ label{
     text-align: center;
 }
 
+/* Back Button Interactivity */
 .form_back:hover {
     background: #969E96;
 }
