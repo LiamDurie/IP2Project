@@ -11,7 +11,7 @@ body {
     max-width: 375px;
     height: 811px;
     max-height: 811px;
-    margin: 1rem;
+    margin: 3rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background: rgba(236, 230, 219, 255) url(./background.png) no-repeat center center;
@@ -19,6 +19,12 @@ body {
     text-align: center;
 }
 
+p {
+    font-size: 16px;
+    font-weight: normal;
+    width: 250px;
+    margin-left: 60px;
+}
 
 .container,
 .form_input,
@@ -39,9 +45,10 @@ body {
 }
 
 .form_title {
-    margin: 2rem;
+    margin: 2rem 2rem 0 0;
     padding-top:100px;
     text-align: center;
+    width: 100%;
 }
 
 .form_message {
@@ -64,7 +71,7 @@ body {
 
 label{
     margin-right:10px;
-    margin-left:10px;
+    margin-left:20px;
     width: 100%;
     text-align: left;
 }
@@ -78,7 +85,7 @@ label{
     outline: none;
     background: #ece6db;
     transition: background 0.2s, border-color 0.2s;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .form_select {
@@ -90,7 +97,7 @@ label{
     outline: none;
     background: #ece6db;
     transition: background 0.2s, border-color 0.2s;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .form_input:focus {
@@ -130,6 +137,7 @@ label{
 }
 
 .form_back {
+    height: 65px;
     width: 146px;
     margin:10px;
     padding: 1rem 1rem;
@@ -142,6 +150,14 @@ label{
     cursor: pointer;
     background: #a7b0a7;
     -webkit-text-stroke: 1px black;
+    text-align: center;
+}
+
+#forgotpasswordEnter{
+    width: 146px;
+    height: 65px;
+    margin-bottom: 188px;
+    text-align: center;
 }
 
 .form_back:hover {
