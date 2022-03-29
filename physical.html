@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Happy Health Physical Health</title>
+</head>
+<body>
+    <header>
+        <article class="flexContainer1">
+            <div class="logo"><a href=index.html><img src="images/logo.png" width="200" height="120" title="Homepage" alt="Happy Health Logo"></a></div>
+            <div class="title"><h1>Happy Health</h1></div>
+        </article>
+
+        <article class="flexContainer2">
+            <div  class="icon1"><img src="images/profile.png" width="50" height="50" alt="profile icon"></div>
+            <div  class="icon2"><img src="images/setting.png" width="50" height="50" alt="setting icon"></div>
+            <div  class="icon3"><img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"></div>
+        
+        </article>
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="physical.html"  class="active">Physical Health</a></li>
+          <li><a href="mental.html">Mental Wellbeing</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Health</h2>
+            <form action="" method="get" onsubmit="">
+                <fieldset>
+                    <labelfor="heart">Heart Rate:</label>
+                    <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$"> bpm<br>
+    
+                    <label for="blood_pressure">Blood pressure:</label>
+                    <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$"> sys<br>
+                    <input class="blood_pressure" type="text" name="dia" id="blood_pressure" pattern="^[0-9]{3}$"> dia<br>
+
+                    <label for="blood_temperature">Blood temperature:</label>
+                    <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$"> °C<br>
+                    
+                    <label for="blood_oxygen">Blood oxygen:</label>
+                    <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$"> %Sp02<br>
+
+                    <label for="respiration_rate">Respiration rate:</label>
+                    <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$"> bpm<br>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Reminders</h2>
+            <p class="reminders"><a href="addReminder.html">Add reminder</a></p>
+            <p class="reminders"><a href="reminderHistory.html">History</a></p>
+
+            <h3>Upcoming Reminders</h3>
+
+        </section>
+    </main>
+</body>
+</html>
