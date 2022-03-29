@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container">
+<form class="form" id="createAccount">
+    <h1 class="form_title">Create Account</h1>
+    <div class="form_message form_message-error"></div>
+
+    <div class="form_input-group">
+        <label for="signupFirstName">First Name:*</label>
+        <input type="text" id="signupFirstName" class="form_input" autofocus required>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <div class="form_input-group">
+        <label for="signupSecondName">Second Name:*</label>
+        <input type="text" id="signupSecondName" class="form_input" autofocus required>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <div class="form_input-group">
+        <label for="signupSex">Sex:*</label>
+        <select class="form_select" name="signupSex" id="signupSex" autofocus required>
+            <option value="" disabled selected></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <div class="form_input-group">
+        <label for="signupEmail">Email:*</label>
+        <input type="email" id="signupEmail" class="form_input" autofocus required>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <div class="form_input-group">
+        <label for="signupPassword">Password:*</label>
+        <input type="password" id="signupPassword" class="form_input" autofocus required>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <div class="form_input-group">
+        <label for="signupMobile">Mobile No:</label>
+        <input type="tel" id="signupMobile" class="form_input" autofocus>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <div class="form_input-group">
+        <label for="signupAge">Age:*</label>
+        <input type="number" id="signupAge" class="form_input" min="14" max="100" autofocus required>
+        <div class="form_input-error-message"></div>
+    </div>
+
+    <button class="form_button" type="submit">Register</button> <br>
+    <button class="form_back" type="button">Back</button>
+
+</form>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
