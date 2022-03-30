@@ -8,7 +8,7 @@
         $age = $_POST['age'];
         $role = 0;
 
-        // Database connection
+        // Database Connection
 
         //SQL QUERY CREATE TABLE IF NOT EXISTS users (id INT( 10 ) NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(200) NOT NULL, sex SMALLINT(6) NOT NULL, email VARCHAR(200) NOT NULL UNIQUE, password VARCHAR(200) NOT NULL, phone VARCHAR(200), age INT(10) NOT NULL, role SMALLINT(6) NOT NULL);
 
@@ -24,4 +24,8 @@
              echo "Registered successfully...";
              $stmt->close();
              $conn->close();
+             ob_start();
+             header("Location: ./login.html", TRUE, 301);
+             ob_end_flush();
+             die();
          }
