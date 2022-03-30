@@ -1,0 +1,27 @@
+<?php
+        $firstname = $_POST['firstname'];
+        $secondname = $_POST['secondname'];
+        $sex = $_POST['sex'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $phone = $_POST['phone'];
+        $age = $_POST['age'];
+        $role = 0;
+
+        // Database connection
+
+        //SQL QUERY CREATE TABLE IF NOT EXISTS users (id INT( 10 ) NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(200) NOT NULL, sex SMALLINT(6) NOT NULL, email VARCHAR(200) NOT NULL UNIQUE, password VARCHAR(200) NOT NULL, phone VARCHAR(200), age INT(10) NOT NULL, role SMALLINT(6) NOT NULL);
+
+        $conn = new mysqli('localhost','root','','users');
+         if($conn->connect_error){
+             echo "$conn->connect_error";
+             die("Connection Failed : ". $conn->connect_error);
+        }else {
+             $stmt = $conn->prepare("insert into users(firstname, secondname, sex, email, password, phone, age, role) values(?, ?, ?, ?, ?, ?, ?, ?)");
+             $stmt->bind_param("ssissiii", $firstname, $secondname, $sex, $email, $password, $phone, $age, $role);
+             $execval = $stmt->execute();
+             echo $execval;
+             echo "Registered successfully...";
+             $stmt->close();
+             $conn->close();
+         }
