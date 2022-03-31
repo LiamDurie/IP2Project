@@ -1,8 +1,10 @@
-Proper Popups
+Proper Popups (Invalid Email/Password alerts etc.)
 Explain Criteria for Inputs
 Email Verification
 Forgot Password.php
-Renew password database table (Email, Token etc)
-Table of user data
+Renew password database table (Email, Token etc.)
+Table of user data (Maybe keep physical and mental separate)
 Implement working inputs for other screens
-Make app able to navigate starting from main starting screen
+Make app able to navigate starting from main starting screen (Working buttons to navigate on all screens)
+Finish Layout of html forms
+
