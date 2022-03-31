@@ -1,12 +1,19 @@
 /* ----------Header Styles-------------*/
-.flexContainer {
-	float: left;
-    flex-direction: column;
+.container {
+    width: 375px;
+    max-width: 375px;
+    height: 811px;
+    max-height: 811px;
+    margin: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background-color: #ECE6DB;
+ 
 }
 
-.flexContainer2 {
-	float: right;
-    flex-direction: column;
+.icon {
+    height: 12%;
+    align-items: centre;
+    float: right;
 }
 
 /* ----put in flexbox */
@@ -15,14 +22,23 @@
 /* ----------Navigation Styles------------- */
 nav {
 	background-color: #03989E;
-	padding: 1px ;
-	width: 100%;	
-	min-width: 400px;	
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+nav ul {
+    margin: 0;
+	padding: 0;
 }
 
 nav li {
 	display: inline-block;
 	padding: 0.5%;
+    margin-right: 15px;
 }
 
 nav li a {
@@ -30,40 +46,42 @@ nav li a {
     color: #ffffff;
 }
 
-/* Style the links inside the navigation bar */
-nav a {
-	color: #fefee3ff;
-	text-align: centre;
-	padding: 1rem;
-	text-decoration: none;
-	font-size: 1.1.rem;
-}
-
-/* Add a color to the active/current link */
-/* <a class="active" ...> */
 nav a.active {
 	background-color: #117478;
 	color:  #ffffff;
-	margin: 0.5rem;
-
-
+	padding: 1rem;
 }
 
-/* Change the color of links on hover */
 nav a:hover {
 	background-color: #20d7dd;
     color: #ffffff;
-	padding: 1rem;
+    padding: 1rem;
+
 }
 
 
 /* ---------------Body Styles----------------- */
 body {
-	max-width: 1024px;
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.8em;
-    background-color: #ECE6DB;
+}
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.form_button {
+    color: #ffffff;
+    border: solid #03989E;
+    background-color: #03989E;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 h2 {
@@ -78,9 +96,8 @@ h3 {
     background-color: #03989E;
 }
 
+
 .button {
-    border: 3px solid #03989E;
-    background-color: #03989E;
     height: 45px;
     width: 200px;
     border-radius: 10px;
@@ -103,8 +120,12 @@ p.reminders{
     padding: 5px;
     text-align: center;
     display: inline;
-
 }
+
+.reminderButton {
+    display: inline;
+}
+
 
 
 /* ---------------Main Styles----------------- */
