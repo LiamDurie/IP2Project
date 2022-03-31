@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  
 
     <title>Happy Health Physical Health</title>
 </head>
@@ -36,7 +34,7 @@
                 <h2>Health</h2>
                 <form action="" method="get" id="health">
                     <fieldset>
-                        <labelfor="heart">Heart Rate:</label>
+                        <label for="heart">Heart Rate:</label>
                         <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$"> bpm<br>
         
                         <label for="blood_pressure">Blood pressure:</label>
@@ -59,21 +57,19 @@
                 <h2>Reminders</h2>  
 
                 <div class="reminderButton">
-                    <button class="form_button" type="sumbit">Add Reminder</button>
-                       <a class="form_link" href="./" id="linkAddRemininder">Add Reminder</a>
+                    <button class="form_button" id="btnAddReminder" onclick="addReminderDisplay()">Add Reminder</button>
                 </div>
             
                 <div class="reminderButton">
-                    <button class="form_button" type="sumbit">History</button>
-                      <a class="form_link" href="./" id="linkReminderHistory">History</a>
+                    <button class="form_button" id="btnReminderHistory" onclick="listReminderDisplay()">History</button>
                 </div>
                 
-                <form class="form" form--hidden id="addReminder">
+                <form class="form" id="addReminder" hidden>
                     <fieldset>
-                        <labelfor="title">Reminder Title:</label>
+                        <label for="title">Reminder Title:</label>
                         <input type="text" name="reminder" id="title" pattern="^[A-Z]+[a-z]+$" required><br>
         
-                        <label for="time">Time:</label><br>
+                        <label for="reminder">Time:</label><br>
                         <input type="time" id="reminder" name="time" required><br>
     
                         <label for="date">Date:</label>
@@ -81,12 +77,12 @@
                     </fieldset>
                 </form>
                 
-                <form class="form" id="reminderHistory">
+                <form class="form" id="reminderHistory" hidden>
                     <fieldset>
-                        <labelfor="title">Reminder Title:</label>
+                        <label for="title">Reminder Title:</label>
                         <input type="text" name="reminder" id="title" pattern="^[A-Z]+[a-z]+$" required><br>
         
-                        <label for="time">Time:</label><br>
+                        <label for="reminder">Time:</label><br>
                         <input type="time" id="reminder" name="time" required><br>
     
                         <label for="date">Date:</label>
@@ -98,5 +94,27 @@
             </section>
         </main>
     </div>
+    <script src="script.js"></script>
+
+    <script>
+        function addReminderDisplay() {
+            var x = document.getElementById("addReminder");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function listReminderDisplay() {
+            var x = document.getElementById("reminderHistory");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>

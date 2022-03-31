@@ -84,6 +84,14 @@ a {
     display: inline-block;
 }
 
+.form_button:hover {
+    background: #028085;
+}
+
+.form_button:active {
+    transform: scale(0.98);
+}
+
 h2 {
     color: #ffffff;
     border: 3px solid #03989E;
