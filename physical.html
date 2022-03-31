@@ -39,7 +39,7 @@
         
                         <label for="blood_pressure">Blood pressure:</label>
                         <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$"> sys<br>
-                        <input class="blood_pressure" type="text" name="dia" id="blood_pressure" pattern="^[0-9]{3}$"> dia<br>
+                        <input class="blood_pressure" type="text" name="dia" id="blood_pressure2" pattern="^[0-9]{3}$"> dia<br>
     
                         <label for="blood_temperature">Blood temperature:</label>
                         <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$"> °C<br>
@@ -57,11 +57,11 @@
                 <h2>Reminders</h2>  
 
                 <div class="reminderButton">
-                    <button class="form_button" id="btnAddReminder" onclick="addReminderDisplay()">Add Reminder</button>
+                    <button class="form_button" id="btnAddReminder" onclick="addReminderDisplay()" >Add Reminder</button>
                 </div>
             
                 <div class="reminderButton">
-                    <button class="form_button" id="btnReminderHistory" onclick="listReminderDisplay()">History</button>
+                    <button class="form_button" id="btnReminderHistory" onclick="listReminderDisplay()" >History</button>
                 </div>
                 
                 <form class="form" id="addReminder" hidden>
@@ -79,14 +79,14 @@
                 
                 <form class="form" id="reminderHistory" hidden>
                     <fieldset>
-                        <label for="title">Reminder Title:</label>
-                        <input type="text" name="reminder" id="title" pattern="^[A-Z]+[a-z]+$" required><br>
+                        <label for="title2">Reminder Title:</label>
+                        <input type="text" name="reminder" id="title2" pattern="^[A-Z]+[a-z]+$" required><br>
         
-                        <label for="reminder">Time:</label><br>
-                        <input type="time" id="reminder" name="time" required><br>
+                        <label for="reminder2">Time:</label><br>
+                        <input type="time" id="reminder2" name="time" required><br>
     
-                        <label for="date">Date:</label>
-                        <input type="date" name="reminder" id="date"><br>
+                        <label for="date2">Date:</label>
+                        <input type="date" name="reminder" id="date2"><br>
                     </fieldset>
                 </form>
     
@@ -115,6 +115,5 @@
             }
         }
     </script>
-
 </body>
 </html>
