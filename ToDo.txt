@@ -1,0 +1,8 @@
+Proper Popups
+Explain Criteria for Inputs
+Email Verification
+Forgot Password.php
+Renew password database table (Email, Token etc)
+Table of user data
+Implement working inputs for other screens
+Make app able to navigate starting from main starting screen
