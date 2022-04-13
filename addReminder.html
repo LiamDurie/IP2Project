@@ -18,7 +18,7 @@
 
             <img src="images/profile.png" width="50" height="50" alt="profile icon"><br>
             <img src="images/setting.png" width="50" height="50" alt="setting icon"><br>
-            <img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"><br>
+            <a href=physical.html><img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"></a><br>
            </div>
         </header>
         
@@ -75,8 +75,28 @@
                 <h2>Reminders</h2>  
 
                     <li class="reminderButton"><a href="addReminder.html">Add Reminder</a></li>
-                    <li class="reminderButton"><a href="physical.html">History</a></li><br><br>
+                    <li class="reminderButton"><a href="reminderHistory.html">History</a></li><br><br>
+            
+                
+                <form action="" method="get" id="addReminder">
+                    <fieldset>
 
+                        <div class="form_input-group">
+                            <label for="title">Reminder Title:</label>
+                            <input type="text" name="reminder" id="title" pattern="^[A-Z]+[a-z]+$" class="form_input" autofocus required>
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="time">Time:</label>
+                        <input type="time" id="reminder" name="time" class="form_input" autofocus required>
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="date">Date:</label>
+                            <input type="date" name="reminder" id="date" class="form_input" autofocus>
+                        </div>
+                    </fieldset>
+                </form>
                 <h3>Upcoming Reminders</h3>
             </section>
         </main>

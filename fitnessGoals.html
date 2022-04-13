@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Happy Health Fitness Health</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <a href=physical.html><img class="logo" src="images/logo.png" width="200" height="120" title="Homepage" alt="Happy Health Logo"></a>
+            <div class="icon">
+ 
+             <img src="images/profile.png" width="50" height="50" alt="profile icon"><br>
+             <img src="images/setting.png" width="50" height="50" alt="setting icon"><br>
+             <a href=fitness.html><img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"></a><br>
+            </div>
+         </header>
+         
+         <br><br><br>
+         <nav>
+             <ul>
+               <li><a href="physical.html" >Physical Health</a></li>
+               <li><a href="mental.html">Mental Wellbeing</a></li>
+               <li><a href="fitness.html" class="active">Fitness</a></li>
+             </ul>
+         </nav>
+
+         <main>
+            <section>
+                <h3>Fitness Goals</h3>
+                <form action="" method="get" id="nutrition">
+                    <fieldset>
+
+                        <div class="form_input-group">
+                            <label for="title">Goal:</label>
+                            <input type="text" name="entry" id="title" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="date">Achieve by:</label>
+                            <input type="date" id="date" name="date" class="form_input" autofocus>
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="note">Note:</label>
+                            <input type="text" name="note" id="note" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                        </div>
+
+                    </fieldset>
+
+                    <button class="form_button" type="submit">Set Goal</button>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

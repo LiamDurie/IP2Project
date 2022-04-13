@@ -3,7 +3,7 @@
     width: 375px;
     max-width: 375px;
     height: 811px;
-    max-height: 811px;
+    max-height: 1024px;
     margin: 3rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     background-color: #ECE6DB;
@@ -15,8 +15,6 @@
     align-items: centre;
     float: right;
 }
-
-/* ----put in flexbox */
 
 
 /* ----------Navigation Styles------------- */
@@ -72,25 +70,20 @@ a {
 
 }
 
-.form_button {
+.reminderButton {
     color: #ffffff;
-    border: solid #03989E;
+    padding: 0.5rem;
     background-color: #03989E;
-    width: 50%;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    display: inline-block;
+   
 }
 
-.form_button:hover {
-    background: #028085;
-}
+/**
+border: none;
+outline: none;
+cursor: pointer;
+display: inline-block;
+**/
 
-.form_button:active {
-    transform: scale(0.98);
-}
 
 h2 {
     color: #ffffff;
@@ -102,23 +95,46 @@ h3 {
     color: #ffffff;
     border: 2px solid #03989E;
     background-color: #03989E;
+    text-decoration: none;
 }
-
 
 .button {
     height: 45px;
-    width: 200px;
+    width: 300px;
     border-radius: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
     text-align: center;
     padding-top: 20px;
+    background-color: #03989E;
+    display: inline-block;
 }
 
 .pictures {
-    height: 100px;
-    width: 200px;
+    height: 120px;
+    width: 250px;
     border-radius: 10px;
     margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.exercises {
+    text-align: center;
+}
+
+.challenges {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.tips{
+    font-size: 14px;
+    background-color: #03989E;
+    padding: 5px;
+
+
 }
 
 p.reminders{
@@ -132,18 +148,108 @@ p.reminders{
 
 .reminderButton {
     display: inline;
+    padding: 10px 62px 10px 62px;
+    margin-left: 0px;
 }
 
 
 
 /* ---------------Main Styles----------------- */
 main {
-	background-color: #ffffff;
+	background-color: #ECE6DB;
     padding-bottom: 20px;
 }
 
 /* ----------------Form Styles---------------- */
-input {
-	margin-bottom: 5px;
+form {
+    background-color: #ECE6DB;
+    border-radius: 10px;
+
 }
 
+fieldset {
+    border: none;
+
+}
+
+label{
+    margin-right:10px;
+    margin-left:10px;
+    width: 100%;
+    text-align: left;
+}
+
+
+input {
+    margin-right: 20px;
+    margin-left:20px;
+    margin-bottom: 2px;
+    height: 20px;
+    width: 85%;
+    text-align: left;
+    background-color: #ECE6DB;
+    border: 2px solid #03989E;
+
+
+}
+/**
+.form_input {
+    object-fit: fill;
+    text-align: left;
+    max-height:36px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    outline: none;
+    background: #ece6db;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+**/
+
+.form_input:focus {
+    border-color: #03989E;
+    background: #ffffff;
+}
+
+.from_align {
+    margin-bottom: 1rem;
+    display: flex;
+    margin-left: 9.5rem;
+    width: 50%;
+
+}
+
+.form_input-group {
+    margin-bottom: 1rem;
+    display: flex; /* Extremely Important for keeping the labels and text-fields inline*/
+}
+
+form p{
+    color: #ffffff;
+    border: 1px solid #03989E;
+    background-color: #03989E;
+}
+
+/* ----------------Form Button Styles---------------- */
+.form_button {
+    margin-left: 17rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+}
+
+.form_button {
+    border: 2px solid #028085;
+}
+
+.form_button:hover {
+    background: #028085;
+}
+
+.form_button:active {
+    transform: scale(0.98);
+}
