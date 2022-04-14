@@ -15,10 +15,9 @@
         <header>
            <a href=physical.html><img class="logo" src="images/logo.png" width="200" height="120" title="Homepage" alt="Happy Health Logo"></a>
            <div class="icon">
-
-            <img src="images/profile.png" width="50" height="50" alt="profile icon"><br>
-            <img src="images/setting.png" width="50" height="50" alt="setting icon"><br>
-            <img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"><br>
+               <img src="images/profile.png" width="50" height="50" alt="profile icon"><br>
+               <img src="images/setting.png" width="50" height="50" alt="setting icon"><br>
+               <img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"><br>
            </div>
         </header>
         
@@ -46,18 +45,16 @@
                             <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> sys<br>
                         </div>
 
-                            <div class="from_align">
-                                <input type="text" name="dia" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> dia
-                            </div>
-
+                
                         <div class="form_input-group">
                             <label for="blood_temperature">Blood temperature:</label>
                             <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus> °C
                         </div>
 
-                        <div class="form_input-group">
-                            <label for="blood_oxygen">Blood oxygen:</label>
+                        <div class="form_input-group" >
+                            <label for="blood_oxygen">Blood oxygen:</label><h5 class="hide">hello</h5>
                             <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> %Sp02
+                            
                         </div>
 
                         <div class="form_input-group">
@@ -79,6 +76,11 @@
 
                 <h3>Upcoming Reminders</h3>
             </section>
+
+            <section>
+                <h2>Create Report</h2>  
+                <button class="report_button" type="submit">View report</button> <br>
+
         </main>
     </div>
 </body>
