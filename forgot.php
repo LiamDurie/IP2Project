@@ -1,5 +1,13 @@
 <?php
-
+    
+    //CREATE TABLE pwdReset (
+    //  pwdResetId int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    //  pwdResetEmail TEXT NOT NULL,
+    //  pwdResetSelector TEXT NOT NULL,
+    //  pwdResetToken LONGTEXT NOT NULL,
+    //  pwdResetExpires TEXT NOT NULL
+    //);
+    
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
     $url = "http://localhost:63342/IP2Project/NewPassword.php?selector=" . $selector . "&validator=" . bin2hex($token);
@@ -31,11 +39,13 @@
         echo "There was an error!";
         exit();
     } else {
+        //Encrypts token for security reasons
         $hashedToken = password_hash($token, PASSWORD_DEFAULT);
         mysqli_stmt_bind_param($stmt, "ssss", $userEmail, $selector, $hashedToken, $expires);
         mysqli_stmt_execute($stmt);
     }
-
+    
+    //Close Connection
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
 

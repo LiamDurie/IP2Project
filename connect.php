@@ -12,12 +12,17 @@
 
         //SQL QUERY
         // CREATE TABLE IF NOT EXISTS users (
-        //id INT( 10 ) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        // name VARCHAR(200) NOT NULL, sex SMALLINT(6) NOT NULL, email VARCHAR(200) NOT NULL UNIQUE,
-        // password VARCHAR(200) NOT NULL, phone VARCHAR(200),
-        // age INT(10) NOT NULL, role SMALLINT(6) NOT NULL
+        // id INT( 10 ) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        // name VARCHAR(200) NOT NULL,
+        // sex SMALLINT(6) NOT NULL,
+        // email VARCHAR(200) NOT NULL UNIQUE,
+        // password VARCHAR(200) NOT NULL,
+        // phone VARCHAR(200),
+        // age INT(10) NOT NULL,
+        // role SMALLINT(6) NOT NULL
         //);
 
+        //Connect to database
         $conn = new mysqli('localhost','root','','users');
          if($conn->connect_error){
              echo "$conn->connect_error";
@@ -29,8 +34,10 @@
              $execval = $stmt->execute();
              echo $execval;
              echo "Registered successfully...";
+             //close connection
              $stmt->close();
              $conn->close();
+             //Send user to login on completion
              ob_start();
              header("Location: ./login.html", TRUE, 301);
              ob_end_flush();
