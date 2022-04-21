@@ -26,7 +26,11 @@
             <input type="password"
                    id="loginPassword"
                    name="password"
-                   class="form_input" autofocus required>
+                   class="form_input"
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                   autofocus
+                   required
+            >
             <div class="form_input-error-message"></div>
 
         </div>

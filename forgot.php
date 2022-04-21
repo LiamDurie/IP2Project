@@ -2,7 +2,7 @@
 
     $selector = bin2hex(random_bytes(8));
     $token = random_bytes(32);
-    $url = "http://localhost:63342/IP2Project/Forgotten Password.html?selector=" . $selector . "&validator=" . bin2hex($token);
+    $url = "http://localhost:63342/IP2Project/NewPassword.php?selector=" . $selector . "&validator=" . bin2hex($token);
     $expires = date("U") + 1800;
     $userEmail = $_POST['email'];
 
@@ -31,7 +31,8 @@
         echo "There was an error!";
         exit();
     } else {
-        mysqli_stmt_bind_param($stmt, "ssss", $userEmail, $selector, $token, $expires);
+        $hashedToken = password_hash($token, PASSWORD_DEFAULT);
+        mysqli_stmt_bind_param($stmt, "ssss", $userEmail, $selector, $hashedToken, $expires);
         mysqli_stmt_execute($stmt);
     }
 
@@ -42,9 +43,9 @@
     // Who are we sending it to.
     $to = $userEmail;
     // Subject
-    $subject = 'Reset your password for mmtuts';
+    $subject = 'Reset your password';
     // Message
-    $message = '<p>We recieved a password reset request. The link to reset your password is below. ';
+    $message = '<p>We received a password reset request. The link to reset your password is below. ';
     $message .= 'If you did not make this request, you can ignore this email</p>';
     $message .= '<p>Here is your password reset link: </br>';
     $message .= '<a href="' . $url . '">' . $url . '</a></p>';
@@ -56,7 +57,10 @@
     // Send e-mail
     if(mail($to, $subject, $message, $headers)){
         echo "Email sent successfully to $userEmail";
+        
     } else{
         echo "Failed";
     }
+
+    
     
