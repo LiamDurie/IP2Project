@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   
 
     <title>Happy Health Physical Health</title>
@@ -32,38 +32,39 @@
 
         <main>
             <section>
-                <h2>Health</h2>
-                <form action="" method="get" id="health">
+                <h2>Physiological Data</h2>
+                <form action="" method="get" id="health" onsubmit="return false">
                     <fieldset>
                         <div class="form_input-group">
                             <label for="heart">Heart Rate: (bpm)</label>
-                            <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$" class="form_input" autofocus>
+                            <input type="text" name="heart" id="heart" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                        </div>
+
+
+                        <div class="form_input-group">
+                            <label for="blood_pressure">Blood pressure: (sys)</label>
+                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{2,3}$" class="form_input" autofocus> <br>
                         </div>
 
                         <div class="form_input-group">
-                            <label for="blood_pressure">Blood pressure:</label>
-                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> sys<br>
-                        </div>
-
-                
-                        <div class="form_input-group">
-                            <label for="blood_temperature">Blood temperature:</label>
-                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus> °C
+                            <label for="blood_temperature">Blood temperature: (°C)</label>
+                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
                         </div>
 
                         <div class="form_input-group" >
-                            <label for="blood_oxygen">Blood oxygen:</label><h5 class="hide">hello</h5>
-                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> %Sp02
-                            
+                            <label for="blood_oxygen">Blood oxygen: (%Sp02)</label>
+                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> 
                         </div>
 
+                   
                         <div class="form_input-group">
-                            <label for="respiration_rate">Respiration rate:</label>
-                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$" class="form_input" autofocus> bpm
+                            <label for="respiration_rate">Respiration rate: (bpm)</label>
+                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
                         </div>
                     </fieldset>
-
-                    <button class="form_button" type="submit">Submit</button>
+                    
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
 
                 </form>
             </section>
@@ -74,14 +75,22 @@
             </section>
 
             <section>
-                <h2>Reminders</h2>  
+                <h2>Reminders</h2> 
 
-                    <li class="reminderButton"><a href="addReminder.html">Add Reminder</a></li>
-                    <li class="reminderButton"><a href="physical.html">History</a></li><br><br>
+                <button class="form_button4" type="submit">Add Reminder</button> 
+                <button class="form_button4" type="submit">Reminder History</button><br>
 
+               
                 <h3>Upcoming Reminders</h3>
             </section>
         </main>
+
+        <footer>
+            <a href="mental.html">
+                <button class="form_button5" type="submit">Continue to next section</button>
+            </a>
+        </footer>
+    </div>
     </div>
 </body>
 </html>

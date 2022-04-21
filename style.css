@@ -7,7 +7,7 @@
     margin: 3rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
     background-color: #ECE6DB;
- 
+    
 }
 
 .icon {
@@ -59,9 +59,22 @@ nav a:hover {
 
 
 /* ---------------Body Styles----------------- */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.8em;
+}
+
+.change {
+    float: right;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.change2 {
+    float: right;
+	margin-top: 40px;
+	margin-right: 5px;
 }
 
 a {
@@ -69,21 +82,6 @@ a {
     text-decoration: none;
 
 }
-
-.reminderButton {
-    color: #ffffff;
-    padding: 0.5rem;
-    background-color: #03989E;
-   
-}
-
-/**
-border: none;
-outline: none;
-cursor: pointer;
-display: inline-block;
-**/
-
 
 h2 {
     color: #ffffff;
@@ -98,16 +96,6 @@ h3 {
     text-decoration: none;
 }
 
-.button {
-    height: 45px;
-    width: 300px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    padding-top: 20px;
-    background-color: #03989E;
-    display: inline-block;
-}
 
 .pictures {
     height: 120px;
@@ -129,12 +117,19 @@ h3 {
     padding-top: 10px;
 }
 
-.tips{
-    font-size: 14px;
-    background-color: #03989E;
-    padding: 5px;
+.flexContainer {
+	display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 1rem;
+}
 
-
+.tipPictures{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
 }
 
 p.reminders{
@@ -152,12 +147,17 @@ p.reminders{
     margin-left: 0px;
 }
 
-
-
 /* ---------------Main Styles----------------- */
-main {
+main{
 	background-color: #ECE6DB;
     padding-bottom: 20px;
+}
+
+/* ---------------Footer Styles----------------- */
+
+footer {
+	background-color: #ECE6DB;
+    padding-bottom: 10px;
 }
 
 /* ----------------Form Styles---------------- */
@@ -182,29 +182,14 @@ label{
 
 input {
     margin-right: 20px;
-    margin-left:20px;
     margin-bottom: 2px;
     height: 20px;
     width: 85%;
-    text-align: left;
+    text-align: right;
     background-color: #ECE6DB;
     border: 2px solid #03989E;
-
-
-}
-/**
-.form_input {
-    object-fit: fill;
-    text-align: left;
-    max-height:36px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    outline: none;
-    background: #ece6db;
-    transition: background 0.2s, border-color 0.2s;
 }
 
-**/
 
 .form_input:focus {
     border-color: #03989E;
@@ -216,12 +201,28 @@ input {
     display: flex;
     margin-left: 9.5rem;
     width: 50%;
+}
 
+form .hide{
+    color: #ECE6DB;
+    border: 1px solid #ECE6DB;
+    background-color: #ECE6DB;
 }
 
 .form_input-group {
     margin-bottom: 1rem;
     display: flex; /* Extremely Important for keeping the labels and text-fields inline*/
+}
+
+.form_input {
+    object-fit: fill;
+    text-align: left;
+    max-height:36px;
+    box-sizing: border-box;
+    outline: none;
+    background: #ece6db;
+    transition: background 0.2s, border-color 0.2s;
+    margin-right: 20px;
 }
 
 form p{
@@ -240,16 +241,119 @@ form p{
     outline: none;
     cursor: pointer;
     background: #03989e;
-}
-
-.form_button {
     border: 2px solid #028085;
+    display: inline;
 }
 
-.form_button:hover {
-    background: #028085;
+.form_button2 {
+    margin-left: 13rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button3 {
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button4 {
+    width: 185px;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button5 {
+    margin-left: 6rem;
+    color: #ffffff;
+    width: 185px;
+    padding: 4px 13px 4px 13px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    text-decoration: none;
 }
 
 .form_button:active {
     transform: scale(0.98);
+}
+
+
+
+.add, .history {
+    width: 375px;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+}
+
+.add:hover, .history:hover .form_button:hover {
+    background: #028085;
+}
+
+.add:active, .history:active {
+    transform: scale(0.98);
+    background: #039297;
+
+}
+
+.report_button {
+    width: 236px;
+    margin-left: 4rem;
+    padding: 1rem 1rem;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+}
+
+.report_button:hover, .button4:hover,
+.form_button2:hover, .form_button3:hover, 
+.form_button4:hover{
+    background: #028085;
+}
+
+.form_button5:hover {
+    color: #5d079f;
+}
+
+.button {
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #03989E;
+    display: inline-block;
 }

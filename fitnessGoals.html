@@ -15,7 +15,7 @@
  
              <img src="images/profile.png" width="50" height="50" alt="profile icon"><br>
              <img src="images/setting.png" width="50" height="50" alt="setting icon"><br>
-             <a href=fitness.html><img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"></a><br>
+             <a href=fitnessChallenges.html><img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"></a><br>
             </div>
          </header>
          
@@ -31,12 +31,11 @@
          <main>
             <section>
                 <h3>Fitness Goals</h3>
-                <form action="" method="get" id="nutrition">
+                <form action="" method="get" id="goals" onsubmit="return false">
                     <fieldset>
-
                         <div class="form_input-group">
                             <label for="title">Goal:</label>
-                            <input type="text" name="entry" id="title" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="entry" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
                         </div>
 
                         <div class="form_input-group">
@@ -46,15 +45,24 @@
 
                         <div class="form_input-group">
                             <label for="note">Note:</label>
-                            <input type="text" name="note" id="note" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="note" id="note" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
                         </div>
 
                     </fieldset>
 
-                    <button class="form_button" type="submit">Set Goal</button>
-                </form>
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
+
+                <h3>Goals</h3>
             </section>
         </main>
+
+        
+        <footer>
+            <a href="physical.html">
+                <button class="form_button5" type="submit">Back to Physical Health Section</button>
+            </a>
+        </footer>
     </div>
 </body>
 </html>

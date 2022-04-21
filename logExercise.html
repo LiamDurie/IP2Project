@@ -31,12 +31,12 @@
          <main>
             <section>
                 <h3>Log Exercise</h3>
-                <form action="" method="get" id="nutrition">
+                <form action="" method="get" id="logExercise" onsubmit="return false">
                     <fieldset>
 
                         <div class="form_input-group">
                             <label for="title">Exercise Title:</label>
-                            <input type="text" name="entry" id="title" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="entry" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
                         </div>
 
                         <div class="form_input-group">
@@ -56,13 +56,18 @@
 
                     </fieldset>
 
-                    <button class="form_button" type="submit">Submit</button>
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
 
-                
-                
-                </form>
+                <h3>Completed Exercises</h3>
             </section>
         </main>
+        
+        <footer>
+            <a href="fitnessChallenges.html">
+                <button class="form_button5" type="submit">Continue to next activity</button>
+            </a>
+        </footer>
     </div>
 </body>
 </html>

@@ -31,34 +31,50 @@
          <main>
             <section>
                 <h3>Nutrition</h3>
-                <form action="" method="get" id="nutrition">
+                <form action="" method="get" id="nutrition" onsubmit="return false">
                     <fieldset>
-                        <label for="num_glasses">Glasses of Water</label> <br>
-                        <input type="number" id="num_glasses" name="num_glasses" min="0" max="50"><br><br>
+
+                        <div class="form_input-group">
+                            <label for="num_glasses">Glasses of Water</label> <br>
+                            <input type="number" id="num_glasses" name="num_glasses" min="0" max="50" class="form_input" autofocus> 
+                        </div>
     
-                        <label for="num_fruit">Fruit</label> <br>
-                        <input type="number" id="num_fruit" name="num_fruit" min="0" max="50"><br><br>
-    
-                        <label for="num_vegetables">Vegetables</label> <br>
-                        <input type="number" id="num_vegetables" name="num_vegetables" min="0" max="50"><br><br>
+                        <div class="form_input-group">
+                            <label for="num_fruit">Fruit</label> <br>
+                            <input type="number" id="num_fruit" name="num_fruit" min="0" max="50" class="form_input" autofocus> 
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="num_vegetables">Vegetables</label> <br>
+                            <input type="number" id="num_vegetables" name="num_vegetables" min="0" max="50" class="form_input" autofocus> 
+                        </div>
+
                     </fieldset>
                         
                         <p>Food Dairy</p>
                         
                     <fieldset>
-    
-                        <label for="breakfast">Breakfast:</label>
+                        <label for="breakfast">Breakfast:</label><br>
                         <textarea id="breakfast" name="box" rows="5" cols="40"></textarea><br><br>
-                        
+
                         <label for="lunch">Lunch:</label>
                         <textarea id="lunch" name="box" rows="5" cols="40"></textarea><br><br>
-    
+
                         <label for="dinner">Dinner:</label>
                         <textarea id="dinner" name="box" rows="5" cols="40"></textarea><br><br>
                     </fieldset>
+
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
                 </form>
             </section>
         </main>
+
+        <footer>
+            <a href="dairyEntry.html">
+                <button class="form_button5" type="submit">Continue to next activity</button>
+            </a>
+        </footer>
     </div>
 </body>
 </html>
