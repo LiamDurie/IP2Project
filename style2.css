@@ -1,0 +1,420 @@
+/* ----------Header Styles-------------*/
+.container {
+    width: 375px;
+    max-width: 375px;
+    height: 811px;
+    max-height: 1024px;
+    margin: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background-color: #ECE6DB;
+}
+
+.icon {
+    height: 12%;
+    align-items: centre;
+    float: right;
+}
+
+.change {
+    float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.change1 {
+    float: right;
+	margin-top: 17px;
+	margin-right: 5px;
+}
+
+.change2 {
+    float: right;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.change3 {
+    float: right;
+	margin-right: 5px;
+}
+
+.change4 {
+    float: right;
+    margin-top: 40px;
+	margin-right: 60px;
+}
+
+
+/* ----------Navigation Styles------------- */
+nav {
+	background-color: #03989E;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+}
+
+nav ul {
+    margin: 0;
+	padding: 0;
+	text-align: center;
+
+}
+
+nav li {
+	display: inline-block;
+	padding: 0.5%;
+	margin-right: 24px;
+	text-align: center;
+
+}
+
+nav li a {
+	text-decoration: none;
+    color: #ffffff;
+}
+
+nav a.active {
+	background-color: #b93417;
+	color:  #ffffff;
+	padding: 0.5rem;
+}
+
+nav a:hover {
+	background-color: #0b888d;
+    color: #ffffff;
+    padding: 0.5rem;
+
+}
+
+
+/* ---------------Body Styles----------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+.addSection{
+	color: #ffffff;
+    margin-top: -1px;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+
+}
+
+h2 {
+    color: #ffffff;
+    border: 3px solid #03989E;
+    background-color: #03989E;
+}
+
+h3 {
+    color: #ffffff;
+    border: 2px solid #03989E;
+    background-color: #03989E;
+    text-decoration: none;
+}
+
+
+.pictures {
+    height: 120px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.exercises {
+    text-align: center;
+}
+
+.challenges {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.flexContainer {
+	display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.tipPictures{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+p.reminders{
+    color: #ffffff;
+    border: 1px solid #03989E;
+    background-color: #03989E;
+    padding: 5px;
+    text-align: center;
+    display: inline;
+}
+
+.reminderButton {
+    display: inline;
+    padding: 10px 62px 10px 62px;
+    margin-left: 0px;
+}
+
+/* ---------------Main Styles----------------- */
+main{
+	background-color: #ECE6DB;
+    padding-bottom: 20px;
+}
+
+/* ---------------Footer Styles----------------- */
+
+footer {
+	background-color: #ECE6DB;
+    padding-bottom: 10px;
+}
+
+/* ----------------Form Styles---------------- */
+form {
+    background-color: #ECE6DB;
+    border-radius: 10px;
+
+}
+
+fieldset {
+    border: none;
+
+}
+
+label{
+    margin-right:10px;
+    margin-left:10px;
+    width: 100%;
+    text-align: left;
+}
+
+
+input {
+    margin-right: 20px;
+    margin-bottom: 2px;
+    height: 20px;
+    width: 85%;
+    text-align: right;
+    background-color: #ECE6DB;
+    border: 2px solid #03989E;
+}
+
+
+.form_input:focus {
+    border-color: #03989E;
+    background: #ffffff;
+}
+
+.from_align {
+    margin-bottom: 1rem;
+    display: flex;
+    margin-left: 9.5rem;
+    width: 50%;
+}
+
+form .hide{
+    color: #ECE6DB;
+    border: 1px solid #ECE6DB;
+    background-color: #ECE6DB;
+}
+
+.form_input-group {
+    margin-bottom: 1rem;
+    display: flex; /* Extremely Important for keeping the labels and text-fields inline*/
+}
+
+.form_input {
+    object-fit: fill;
+    text-align: left;
+    max-height:36px;
+    box-sizing: border-box;
+    outline: none;
+    background: #ece6db;
+    transition: background 0.2s, border-color 0.2s;
+    margin-right: 20px;
+}
+
+form p{
+    color: #ffffff;
+    border: 1px solid #03989E;
+    background-color: #03989E;
+}
+
+/* ----------------Form Button Styles---------------- */
+.form_button {
+    margin-left: 17rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button2 {
+    margin-left: 13rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button3 {
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button4 {
+    width: 185px;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    display: inline;
+}
+
+.form_button5 {
+    margin-left: 6rem;
+    color: #ffffff;
+    width: 185px;
+    padding: 4px 13px 4px 13px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+    text-decoration: none;
+}
+
+.form_button:active {
+    transform: scale(0.98);
+}
+
+
+
+.add, .history {
+    width: 375px;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+    border: 2px solid #028085;
+}
+
+.add:hover, .history:hover .form_button:hover {
+    background: #028085;
+}
+
+.add:active, .history:active {
+    transform: scale(0.98);
+    background: #039297;
+
+}
+
+.report_button {
+    width: 236px;
+    margin-left: 3rem;
+    padding: 1rem 1rem;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    background: #03989e;
+}
+
+.report_button:hover, .button4:hover,
+.form_button2:hover, .form_button3:hover, 
+.form_button4:hover{
+    background: #028085;
+}
+
+.form_button5:hover {
+    color: #5d079f;
+}
+
+.data{
+    background-color: #b93417;
+}
+
+.report{
+    float: right;
+    background-color: #b93417;
+    margin-top: -2rem;
+    margin-right: 1rem;
+}
+
+.edit{
+    margin-right: 1rem;
+
+}
+
+.mental{
+    float: right;
+    background-color: #b93417;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.space{
+    float: right;
+    background-color: #b93417;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.mental:hover, .space:hover{
+    background-color: #86230d;
+
+}
+
+.button {
+    height: 45px;
+    width: 270px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #03989E;
+    display: inline-block;
+}

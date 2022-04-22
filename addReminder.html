@@ -33,12 +33,12 @@
 
         <main>
             <section>
-                <h2>Health</h2>
+                <h2>Physiological Data</h2>
                 <form action="" method="get" id="health">
                     <fieldset>
                         <div class="form_input-group">
                             <label for="heart">Heart Rate: (bpm)</label>
-                            <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$" class="form_input" autofocus>
+                            <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$" class="form_input" autofocus> 
                         </div>
 
                         <div class="form_input-group">
@@ -46,24 +46,23 @@
                             <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> <br>
                         </div>
 
+                
                         <div class="form_input-group">
                             <label for="blood_temperature">Blood temperature: (°C)</label>
-                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus>
+                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus> 
                         </div>
 
                         <div class="form_input-group" >
                             <label for="blood_oxygen">Blood oxygen: (%Sp02)</label>
-                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus>
+                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> 
                         </div>
 
                         <div class="form_input-group">
                             <label for="respiration_rate">Respiration rate: (bpm)</label>
-                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$" class="form_input" autofocus>
+                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$" class="form_input" autofocus> 
                         </div>
                     </fieldset>
-
                     <button class="form_button" type="submit">Submit</button>
-
                 </form>
             </section>
 
@@ -73,23 +72,21 @@
             </section>
     
             <section>
-                <h2>Reminders</h2>
+                <h2>Reminders</h2>  
 
-                <button class="form_button4" type="submit">Add Reminder</button>
-                <button class="form_button4" type="submit">Reminder History</button><br><br>
-            
-                
+                    <li class="reminderButton"><a href="addReminder.html">Add Reminder</a></li>
+                    <li class="reminderButton"><a href="reminderHistory.html">History</a></li><br><br>
+        
                 <form action="" method="get" id="addReminder">
                     <fieldset>
-
                         <div class="form_input-group">
                             <label for="title">Reminder Title:</label>
-                            <input type="text" name="reminder" id="title" pattern="^[A-Z]+[a-z]+$" class="form_input" autofocus required>
+                            <input type="text" name="reminder" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus required>
                         </div>
 
                         <div class="form_input-group">
                             <label for="time">Time:</label>
-                        <input type="time" id="time" name="time" class="form_input" autofocus required>
+                        <input type="time" id="reminder" name="time" class="form_input" autofocus required>
                         </div>
 
                         <div class="form_input-group">
@@ -97,6 +94,7 @@
                             <input type="date" name="reminder" id="date" class="form_input" autofocus>
                         </div>
                     </fieldset>
+                    <button class="form_button" type="submit">Submit</button>
                 </form>
                 <h3>Upcoming Reminders</h3>
             </section>

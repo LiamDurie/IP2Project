@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
   
 
     <title>Happy Health Administration Physical Health</title>
@@ -41,86 +41,116 @@
 
             <section>
                 <div class="change">
-                    <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    <a href="noPhysiological.html">
+                        <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </a>
                 </div>
 
                 <div class="change">
-                    <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                    <a href="editPhysiological.html">
+                        <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                    </a>
                 </div>
 
-                <h2>Health</h2>
+                <h2>Physiological Data</h2>
                 <form action="" method="get" id="health">
                     <fieldset>
-                        <div class="form_input-group">
-                            <label for="heart">Heart Rate:</label>
-                            <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$" class="form_input" autofocus> bpm
+                        <div id="heart" class="form_input-group">
+                            <label for="heart">Heart Rate: (bpm)</label>
+                            <input type="text" name="heart" id="heart" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                            <button class="data" onclick="removeFunction()">
+                                <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
 
-                        <div class="form_input-group">
-                            <label for="blood_pressure">Blood pressure:</label>
-                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> sys<br>
+                        <div id="blood_pressure" class="form_input-group">
+                            <label for="blood_pressure">Blood pressure: (sys)</label>
+                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{2,3}$" class="form_input" autofocus> <br>
+                            <button class="data" onclick="removeFunction2()">
+                                <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
 
-                
-                        <div class="form_input-group">
-                            <label for="blood_temperature">Blood temperature:</label>
-                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus> °C
+                        <div id="blood_temperature" class="form_input-group">
+                            <label for="blood_temperature">Blood temperature: (°C)</label>
+                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                            <button class="data" onclick="removeFunction3()">
+                                <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
 
-                        <div class="form_input-group" >
-                            <label for="blood_oxygen">Blood oxygen:</label><h5 class="hide">hello</h5>
-                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> %Sp02
-                            
+                        <div id="blood_oxygen" class="form_input-group">
+                            <label for="blood_oxygen">Blood oxygen: (%Sp02)</label>
+                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> 
+                            <button class="data" onclick="removeFunction4()">
+                                <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
 
-                        <div class="form_input-group">
-                            <label for="respiration_rate">Respiration rate:</label>
-                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$" class="form_input" autofocus> bpm
+                        <div id="respiration_rate" class="form_input-group">
+                            <label for="respiration_rate">Respiration rate: (bpm)</label>
+                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                            <button class="data" onclick="removeFunction5()">
+                                <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
                     </fieldset>
-
-                    <button class="form_button" type="submit">Submit</button>
+     
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
 
                 </form>
             </section>
     
             <section>
                 <div class="change">
-                    <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    <a href="noReport.html">
+                        <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </a>
                 </div>
 
                 <div class="change">
-                    <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                    <a href="editReport.html">
+                        <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                    </a>
                 </div>
 
                 <h2>Report</h2>  
-                <button class="report_button" type="submit">Weekly summary</button> <br>
+                <button id="report" class="report_button" type="submit">Weekly summary</button> <br>
+                
+                <button class="report" onclick="removeFunction7()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                </button>
+
             </section>
 
             <section>
                 <div class="change">
-                    <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    <a href="noReminders.html">
+                        <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </a>
                 </div>
 
-                <div class="change">
-                    <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                 <div class="change">
+                    <a href="editReminders.html">
+                        <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                    </a>
                 </div>
 
                 <h2>Reminders</h2>  
 
-                    <li class="reminderButton"><a href="addReminder.html">Add Reminder</a></li>
-                    <li class="reminderButton"><a href="physical.html">History</a></li><br><br>
+                   <button class="form_button4" type="submit">Add Reminder</button> 
+                   <button class="form_button4" type="submit">Reminder History</button><br>
 
-                    <div class="change1">
-                        <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
-                    </div>
-    
-                    <div class="change1">
-                        <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
-                    </div>
                 <h3>Upcoming Reminders</h3>
             </section>
         </main>
+
+        <footer>
+            <a href="adminMental.html">
+                <button class="form_button5" type="submit">Continue to next section</button>
+            </a>
+        </footer>
     </div>
 </body>
 </html>
