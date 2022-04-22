@@ -34,12 +34,9 @@
         <main>
             <section>
                 <div class="change">
-                    <a href="addPhysical.html">
-                        <img src="images/add.jpg" width="15" height="15" alt="plus icon"><br>
-                    </a>
+                    <img src="images/add.jpg" width="15" height="15" alt="plus icon"><br>
                 </div>
                 <h2>Add Category</h2> 
-
             </section>
 
             <section>
@@ -61,31 +58,31 @@
                         <div id="heart" class="form_input-group">
                             <label for="heart">Heart Rate: (bpm)</label>
                             <input type="text" name="heart" id="heart" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
-                            
+                        
                         </div>
 
                         <div id="blood_pressure" class="form_input-group">
                             <label for="blood_pressure">Blood pressure: (sys)</label>
                             <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{2,3}$" class="form_input" autofocus> <br>
-                      
+                         
                         </div>
 
                         <div id="blood_temperature" class="form_input-group">
                             <label for="blood_temperature">Blood temperature: (°C)</label>
                             <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
-                     
+                           
                         </div>
 
                         <div id="blood_oxygen" class="form_input-group">
                             <label for="blood_oxygen">Blood oxygen: (%Sp02)</label>
                             <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> 
-                          
+                           
                         </div>
 
                         <div id="respiration_rate" class="form_input-group">
                             <label for="respiration_rate">Respiration rate: (bpm)</label>
                             <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
-                     
+                          
                         </div>
                     </fieldset>
      
@@ -111,7 +108,9 @@
                 <h2>Report</h2>  
                 <button id="report" class="report_button" type="submit">Weekly summary</button> <br>
                 
-             
+                <button class="report" onclick="removeFunction7()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                </button>
 
             </section>
 

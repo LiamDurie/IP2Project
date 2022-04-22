@@ -82,7 +82,7 @@ nav a.active {
 }
 
 nav a:hover {
-	background-color: #0b888d;
+	background-color: #682111;
     color: #ffffff;
     padding: 0.5rem;
 
@@ -395,6 +395,26 @@ form p{
     margin-top: 1rem;
     margin-right: 1rem;
 }
+
+.mental2{
+    float: right;
+    background-color: #b93417;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.space2{
+    float: right;
+    background-color: #b93417;
+    margin-top: --10px;
+    margin-right: 1rem;
+}
+
 
 .space{
     float: right;

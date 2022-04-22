@@ -89,3 +89,70 @@ function removeFunction18(){
     let f = document.getElementsByClassName("plan");
     f.remove()
 }
+
+function removeFunction19(){
+    let f = document.getElementById("ExT");
+    f.remove()
+}
+
+function removeFunction20(){
+    let f = document.getElementById("ExH");
+    f.remove()
+}
+
+function removeFunction21(){
+    let f = document.getElementById("min");
+    f.remove()
+}
+
+function removeFunction22(){
+    let f = document.getElementById("calories");
+    f.remove()
+}
+
+function removeFunctiona(){
+    let f = document.getElementById("steps");
+    f.remove()
+}
+
+function removeFunctionb(){
+    let f = document.getElementById("skipping");
+    f.remove()
+}
+
+function removeFunctionc(){
+    let f = document.getElementById("jumpingJack");
+    f.remove()
+}
+
+function removeFunctiond(){
+    let f = document.getElementById("sitUp");
+    f.remove()
+}
+
+function removeFunctione(){
+    let f = document.getElementById("glasses");
+    f.remove()
+}
+
+function removeFunctionf(){
+    let f = document.getElementById("lunges");
+    f.remove()
+}
+
+
+
+
+function removeFunctionA(){
+    let b = document.getElementById("goal");
+    b.remove()
+}
+
+function removeFunctionB(){
+    let c = document.getElementById("date");
+    c.remove()
+}
+function removeFunctionC(){
+    let d = document.getElementById("note");
+    d.remove()
+}

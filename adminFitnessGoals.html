@@ -23,8 +23,8 @@
          <nav>
             <ul>
               <li><a href="adminPhysical.html">Physical <br>Health</a></li>
-              <li><a href="adminMental.html"  class="active">Mental <br>Wellbeing</a></li>
-              <li><a href="adminFitness.html">Fitness</a></li>
+              <li><a href="adminMental.html">Mental <br>Wellbeing</a></li>
+              <li><a href="adminFitness.html" class="active">Fitness</a></li>
               <li><a href="addSection.html">Add <br>Section</a></li>
             </ul>
         </nav>
@@ -49,25 +49,42 @@
                 <form action="" method="get" id="nutrition">
                     <fieldset>
 
-                        <div class="form_input-group">
+                        <div id="goal" class="form_input-group">
                             <label for="title">Goal:</label>
-                            <input type="text" name="entry" id="title" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="entry" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
+                        
+                            <button class="space2" onclick="removeFunctionA()">
+                            <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
+                      
                         </div>
 
-                        <div class="form_input-group">
+                        <div id="date" class="form_input-group">
                             <label for="date">Achieve by:</label>
                             <input type="date" id="date" name="date" class="form_input" autofocus>
+                        
+                         
+                            <button class="space2" onclick="removeFunctionB()">
+                             <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
 
-                        <div class="form_input-group">
+                        <div id="note" class="form_input-group">
                             <label for="note">Note:</label>
-                            <input type="text" name="note" id="note" pattern="^[A-Z]+[a-z]+[0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="note" id="note" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
+                       
+                       
+                            <button class="space2" onclick="removeFunctionC()">
+                            <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                            </button>
                         </div>
-
                     </fieldset>
+     
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
 
-                    <button class="form_button" type="submit">Set Goal</button>
                 </form>
+                <h3>Goals</h3>
             </section>
         </main>
     </div>

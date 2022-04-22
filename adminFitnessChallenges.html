@@ -23,8 +23,8 @@
          <nav>
             <ul>
               <li><a href="adminPhysical.html">Physical <br>Health</a></li>
-              <li><a href="adminMental.html"  class="active">Mental <br>Wellbeing</a></li>
-              <li><a href="adminFitness.html">Fitness</a></li>
+              <li><a href="adminMental.html" >Mental <br>Wellbeing</a></li>
+              <li><a href="adminFitness.html" class="active">Fitness</a></li>
               <li><a href="addSection.html">Add <br>Section</a></li>
             </ul>
         </nav>
@@ -46,25 +46,63 @@
             </div>
             <h3>Fitness Challenges</h3>
             <section class="challenges">
-                <p>Complete 10,000 steps</p>
-                <a href="https://www.youtube.com/watch?v=inpok4MKVLM"><img class="pictures" src="images/steps.jfif" width="200" height="100" alt="meditation image"></a>
+               
+                <div id="steps">
+                    <p>Complete 10,000 steps</p>
+                    <img class="pictures" src="images/steps.jfif" width="200" height="100" alt="meditation image">
+                  
+                    <button class="mental" onclick="removeFunctiona()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </button>
+                </div>
+
+                <div id="skipping">
+                    <p>Do 10 mins of skipping</p>
+                   <img class="pictures" src="images/skipping.webp" width="200" height="100" alt="massaging hands image">
               
-                <p>Do 10 mins of skipping</p>
-                <a href="https://www.youtube.com/watch?v=3yG72oz3eHc"><img class="pictures" src="images/skipping.webp" width="200" height="100" alt="massaging hands image"></a>
+                    <button class="mental" onclick="removeFunctionb()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </button>
+                </div>
+
+                <div id="jumpingJack">
+                    <p>Do 20 jumping jacks</p>
+                    <img class="pictures" src="images/jumpingJacks.jpg" width="200" height="100" alt="dog running with ball image">
               
-                <p>Do 20 jumping jacks</p>
-                <a href="https://www.youtube.com/watch?v=5YTB_mzSckc"><img class="pictures" src="images/jumpingJacks.jpg" width="200" height="100" alt="dog running with ball image"></a>
+                    <button class="mental" onclick="removeFunctionc()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </button>
+                </div>
+
+                <div id="sitUp">
+                    <p>Do 10 sit ups</p>
+                    <img class="pictures" src="images/sitUp.jpg" width="200" height="100" alt="walk image">
               
-                <p>Do 10 sit ups</p>
-                <a href="https://www.youtube.com/watch?v=lgSbF_xH9LU"><img class="pictures" src="images/sitUp.jpg" width="200" height="100" alt="walk image"></a>
+                    <button class="mental" onclick="removeFunctiond()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </button>
+                </div>
+
+                <div id="glasses">
+                    <p>Drink 6 glasses of water</p>
+                    <img class="pictures" src="images/water.png" width="200" height="100" alt="person doing yoga image">
               
-                <p>Drink 6 glasses of water</p>
-                <a href="https://www.youtube.com/watch?v=qiKJRoX_2uo"><img class="pictures" src="images/water.png" width="200" height="100" alt="person doing yoga image"></a>
-              
-                <p>Do 5 lunges</p>
-                <a href="https://www.youtube.com/watch?v=nA5dGCeZO5k"><img class="pictures" src="images/lunges.webp" width="200" height="100" alt="person drawing image"></a>
-              
+                    <button class="mental" onclick="removeFunctione()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </button>
+                </div>
+
+                <div id="lunges">
+                    <p>Do 5 lunges</p>
+                    <img class="pictures" src="images/lunges.webp" width="200" height="100" alt="person drawing image">
+            
+                    <button class="mental" onclick="removeFunctionf()">
+                    <img class="change" src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </button>
+                </div>
+
             </section>
+
         </main>
     </div>
 </body>
