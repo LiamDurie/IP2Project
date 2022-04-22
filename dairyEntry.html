@@ -31,20 +31,20 @@
          <main>
             <section>
                 <h3>Dairy Entries</h3>
-                <form action="" method="get" id="entry" onsubmit="return false">
+                <form action="diaryEntries.php" method="post" id="formEntry">
                     <fieldset>
                         <div class="form_input-group">
                             <label for="title">Entry Title:</label>
-                            <input type="text" name="entry" id="title" pattern="^[a-zA-Z0-9]+$">
+                            <input type="text" name="title" id="title" pattern="^[a-zA-Z0-9]+$">
                         </div>
 
                         <div class="form_input-group">
                             <label for="date">Date:</label>
-                            <input type="date" name="reminder" id="date">
+                            <input type="date" name="date" id="date">
                         </div>
 
                         <label for="entry">Dairy Entry:</label>
-                        <textarea id="entry" name="box" rows="25" cols="45"></textarea><br>
+                        <textarea id="entry" name="entry" rows="25" cols="45"></textarea><br>
                     </fieldset>
 
                     <button class="form_button2" type="reset">Reset</button>

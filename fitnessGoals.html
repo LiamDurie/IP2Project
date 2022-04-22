@@ -31,11 +31,11 @@
          <main>
             <section>
                 <h3>Fitness Goals</h3>
-                <form action="" method="get" id="goals" onsubmit="return false">
+                <form action="fitnessGoals.php" method="post" id="goals">
                     <fieldset>
                         <div class="form_input-group">
                             <label for="title">Goal:</label>
-                            <input type="text" name="entry" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="title" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
                         </div>
 
                         <div class="form_input-group">
@@ -45,7 +45,7 @@
 
                         <div class="form_input-group">
                             <label for="note">Note:</label>
-                            <input type="text" name="note" id="note" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="note" id="note" class="form_input" autofocus>
                         </div>
 
                     </fieldset>

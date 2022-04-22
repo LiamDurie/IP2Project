@@ -77,21 +77,21 @@
                     <li class="reminderButton"><a href="addReminder.html">Add Reminder</a></li>
                     <li class="reminderButton"><a href="reminderHistory.html">History</a></li><br><br>
         
-                <form action="" method="get" id="addReminder">
+                <form action="Add%20Reminder.php" method="post" id="addReminder">
                     <fieldset>
                         <div class="form_input-group">
                             <label for="title">Reminder Title:</label>
-                            <input type="text" name="reminder" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus required>
+                            <input type="text" name="title" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus required>
                         </div>
 
                         <div class="form_input-group">
                             <label for="time">Time:</label>
-                        <input type="time" id="reminder" name="time" class="form_input" autofocus required>
+                        <input type="time" id="time" name="time" class="form_input" autofocus required>
                         </div>
 
                         <div class="form_input-group">
                             <label for="date">Date:</label>
-                            <input type="date" name="reminder" id="date" class="form_input" autofocus>
+                            <input type="date" name="date" id="date" class="form_input" autofocus>
                         </div>
                     </fieldset>
                     <button class="form_button" type="submit">Submit</button>

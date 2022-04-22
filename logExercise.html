@@ -31,12 +31,12 @@
          <main>
             <section>
                 <h3>Log Exercise</h3>
-                <form action="" method="get" id="logExercise" onsubmit="return false">
+                <form action="logExercise.php" method="post" id="logExercise">
                     <fieldset>
 
                         <div class="form_input-group">
                             <label for="title">Exercise Title:</label>
-                            <input type="text" name="entry" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
+                            <input type="text" name="title" id="title" pattern="^[a-zA-Z0-9]+$" class="form_input" autofocus>
                         </div>
 
                         <div class="form_input-group">
@@ -51,7 +51,7 @@
 
                         <div class="form_input-group">
                             <label for="num_calories">Calories burnt:</label>
-                            <input type="number" id="num_calories" name="num_calories" min="1" max="60" class="form_input" autofocus>
+                            <input type="number" id="num_calories" name="num_calories" min="1" class="form_input" autofocus>
                         </div>
 
                     </fieldset>
