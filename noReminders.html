@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+  
+
+    <title>Happy Health Administration Physical Health</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <a href=adminPhysical.html><img class="logo" src="images/adminLogo.png" width="200" height="120" title="Homepage" alt="Happy Health Admin Logo"></a>
+           <div class="icon">
+               <img src="images/profile.png" width="50" height="50" alt="profile icon"><br>
+               <img src="images/setting.png" width="50" height="50" alt="setting icon"><br>
+               <img src="images/backarrow.png" width="50" height="50" alt="backarrow icon"><br>
+           </div>
+        </header>
+        
+        <br><br><br>
+        <nav>
+            <ul>
+              <li><a href="adminPhysical.html"  class="active">Physical <br>Health</a></li>
+              <li><a href="adminMental.html">Mental <br>Wellbeing</a></li>
+              <li><a href="adminFitness.html">Fitness</a></li>
+              <li><a href="addSection.html">Add <br>Section</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <div class="change">
+                    <img src="images/add.jpg" width="15" height="15" alt="plus icon"><br>
+                </div>
+                <h2>Add Category</h2> 
+            </section>
+
+            <section>
+                <div class="change">
+                    <a href="noPhysiological.html">
+                        <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </a>
+                </div>
+
+                <div class="change">
+                    <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                </div>
+
+                <h2>Physiological Data</h2>
+                <form action="" method="get" id="health">
+                    <fieldset>
+                        <div class="form_input-group">
+                            <label for="heart">Heart Rate: (bpm)</label>
+                            <input type="text" name="heart" id="heart" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="blood_pressure">Blood pressure: (sys)</label>
+                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{2,3}$" class="form_input" autofocus> <br>
+                        </div>
+
+                        <div class="form_input-group">
+                            <label for="blood_temperature">Blood temperature: (°C)</label>
+                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                        </div>
+
+                        <div class="form_input-group" >
+                            <label for="blood_oxygen">Blood oxygen: (%Sp02)</label>
+                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> 
+                        </div>
+
+                   
+                        <div class="form_input-group">
+                            <label for="respiration_rate">Respiration rate: (bpm)</label>
+                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{2,3}$" class="form_input" autofocus> 
+                        </div>
+                    </fieldset>
+     
+                    <button class="form_button2" type="reset">Reset</button>
+                    <button class="form_button3" type="submit">Submit</button>
+
+                </form>
+            </section>
+    
+            <section>
+                <div class="change">
+                    <a href="noReport.html">
+                        <img src="images/minus.png" width="15" height="4" alt="minus icon"><br>
+                    </a>
+                </div>
+
+                <div class="change">
+                    <img src="images/edit.png" width="15" height="15" alt="edit icon"><br>
+                </div>
+
+                <h2>Report</h2>  
+                <button class="report_button" type="submit">Weekly summary</button> <br>
+            </section>
+        </main>
+
+        <footer>
+            <a href="adminMental.html">
+                <button class="form_button5" type="submit">Continue to next section</button>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
