@@ -1,5 +1,6 @@
 <?php
     
+    //SQL QUERY Create pwdReset table
     //CREATE TABLE pwdReset (
     //  pwdResetId int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
     //  pwdResetEmail TEXT NOT NULL,

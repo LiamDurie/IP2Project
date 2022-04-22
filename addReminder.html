@@ -37,32 +37,28 @@
                 <form action="" method="get" id="health">
                     <fieldset>
                         <div class="form_input-group">
-                            <label for="heart">Heart Rate:</label>
-                            <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$" class="form_input" autofocus> bpm
+                            <label for="heart">Heart Rate: (bpm)</label>
+                            <input type="text" name="heart" id="heart" pattern="^[0-9]{3}$" class="form_input" autofocus>
                         </div>
 
                         <div class="form_input-group">
-                            <label for="blood_pressure">Blood pressure:</label>
-                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> sys<br>
-                        </div>
-
-                            <div class="from_align">
-                                <input type="text" name="dia" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> dia
-                            </div>
-
-                        <div class="form_input-group">
-                            <label for="blood_temperature">Blood temperature:</label>
-                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus> °C
+                            <label for="blood_pressure">Blood pressure: (sys)</label>
+                            <input type="text" name="sys" id="blood_pressure" pattern="^[0-9]{3}$" class="form_input" autofocus> <br>
                         </div>
 
                         <div class="form_input-group">
-                            <label for="blood_oxygen">Blood oxygen:</label>
-                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus> %Sp02
+                            <label for="blood_temperature">Blood temperature: (°C)</label>
+                            <input type="text" name="temperature" id="blood_temperature" pattern="^[0-9]{3}$" class="form_input" autofocus>
+                        </div>
+
+                        <div class="form_input-group" >
+                            <label for="blood_oxygen">Blood oxygen: (%Sp02)</label>
+                            <input type="text" name="oxygen" id="blood_oxygen" pattern="^[0-9]{3}$" class="form_input" autofocus>
                         </div>
 
                         <div class="form_input-group">
-                            <label for="respiration_rate">Respiration rate:</label>
-                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$" class="form_input" autofocus> bpm
+                            <label for="respiration_rate">Respiration rate: (bpm)</label>
+                            <input type="text" name="respiration" id="respiration_rate" pattern="^[0-9]{3}$" class="form_input" autofocus>
                         </div>
                     </fieldset>
 
@@ -77,10 +73,10 @@
             </section>
     
             <section>
-                <h2>Reminders</h2>  
+                <h2>Reminders</h2>
 
-                    <li class="reminderButton"><a href="addReminder.html">Add Reminder</a></li>
-                    <li class="reminderButton"><a href="reminderHistory.html">History</a></li><br><br>
+                <button class="form_button4" type="submit">Add Reminder</button>
+                <button class="form_button4" type="submit">Reminder History</button><br><br>
             
                 
                 <form action="" method="get" id="addReminder">
@@ -93,7 +89,7 @@
 
                         <div class="form_input-group">
                             <label for="time">Time:</label>
-                        <input type="time" id="reminder" name="time" class="form_input" autofocus required>
+                        <input type="time" id="time" name="time" class="form_input" autofocus required>
                         </div>
 
                         <div class="form_input-group">

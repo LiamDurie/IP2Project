@@ -9,8 +9,8 @@
         $role = 0;
 
         // Database Connection
-
-        //SQL QUERY
+        
+        //SQL QUERY Create users table
         // CREATE TABLE IF NOT EXISTS users (
         // id INT( 10 ) NOT NULL PRIMARY KEY AUTO_INCREMENT,
         // name VARCHAR(200) NOT NULL,
