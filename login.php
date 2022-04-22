@@ -21,7 +21,7 @@
             if($data['password'] === $password) {
                 //If successful send to Physical Form
                 echo "<h2>Login was Successful</h2>";
-                header("Location: ./physical.html", TRUE, 301);
+                header("Location: ./Physical_Form.php", TRUE, 301);
             } else {
                 echo "<h2>Invalid Email or Password</h2>";
             }

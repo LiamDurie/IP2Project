@@ -167,6 +167,13 @@ form {
 
 }
 
+#formReport {
+    background: white;
+    color: black;
+    border-radius:0px;
+    padding:10px;
+}
+
 fieldset {
     border: none;
 
@@ -356,4 +363,20 @@ form p{
     padding-top: 20px;
     background-color: #03989E;
     display: inline-block;
+}
+
+/* ----------------TableStyles---------------- */
+
+table {
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }

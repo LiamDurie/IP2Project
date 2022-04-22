@@ -7,6 +7,13 @@
         // veg int(10) NOT NULL
         //);
 
+        //SQL QUERY Create Table fooddiary
+        // CREATE TABLE IF NOT EXISTS fooddiary (
+        // breakfast TEXT NOT NULL,
+        // lunch TEXT NOT NULL,
+        // Dinner TEXT NOT NULL
+        //);
+
 $glassesofwater = $_POST['num_glasses'];
 $fruit = $_POST['num_fruit'];
 $veg = $_POST['num_vegetables'];
