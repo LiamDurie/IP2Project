@@ -87,7 +87,9 @@
         ?>
         <section>
             <h2>Report</h2>
-            <button class="report_button" type="submit">Weekly summary</button> <br>
+            <a href="report.php">
+                <button class="report_button" type="submit">Summary</button> <br>
+            </a>
         </section>
 
         <section>
